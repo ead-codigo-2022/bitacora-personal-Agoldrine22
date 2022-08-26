@@ -1,0 +1,7 @@
+img {
+    max-width: 100%;
+}
+.basic-image {
+    width: 50%;
+    border: 5px solid gray;
+}
