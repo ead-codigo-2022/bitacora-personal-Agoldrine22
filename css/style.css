@@ -1,5 +1,19 @@
-img {
-    max-width: 100%;
+:root {
+    --primary-color:#3C3C3C;
+    --primary-font: 'Roboto Mono', monospace;
+}
+
+body {
+    color:#2a002b; 
+}
+
+p {
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: .8rem;
+}
+.img {
+    width: 10%;
 }
 .basic-image {
     width: 50%;
