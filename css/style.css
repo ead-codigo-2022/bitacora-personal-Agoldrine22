@@ -1,16 +1,23 @@
 :root {
-    --primary-color:#3C3C3C;
-    --primary-font: 'Roboto Mono', monospace;
+    --primary-color:#000000;
+    --primary-font: 'Roboto Mono', monospace; 
+    --primary-lineheight: '.5rem';
+    font-family: 'Lora', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
     color:#2a002b; 
+    font-family: 'Lora';
+    font-size: .8rem;
 }
 
 p {
     color: var(--primary-color);
     font-family: var(--primary-font);
-    font-size: .8rem;
+    line-height: var(--primary-lineheight);
+    font-size: .9rem;
 }
 .img {
     width: 10%;
