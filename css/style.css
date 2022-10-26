@@ -30,12 +30,6 @@ nav {
     height: 80px;
 }
 
-a.navbar-brand {
-    padding: 2px;
-
-
-}
-
 .nav-link {
     text-transform: uppercase;
     text-decoration: none;
@@ -43,9 +37,29 @@ a.navbar-brand {
     font-size: 0.8rem;
 }
 
+a.nav-link:visited{
+    color: #000000;
+}
+
 a.nav-link:hover{
     color: #43736E;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.line-1 {
+    position: relative;
+    width: 1200px;
+    height: 1px;
+    background-color: #43736E;
+    align-content: center;
+    border-radius: 1px;
+    top: 70px;
+    left: 30px; 
 }
 
 .main-content {
@@ -65,14 +79,62 @@ div.main-content-items{
 }
 
 h1 {
-
     max-width: 500px;
     margin: auto;
     color:#43736E
 }
 
 p {
-
     max-width: 500px;
     margin: auto;
 }
+
+div.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax( 100px, 1fr));
+    margin: auto;
+    column-gap: 0;
+    row-gap: 0;
+    align-items: center;
+    height: 145px;
+}
+
+footer {
+    background-color: white;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+div.footer-text {
+    font-weight: bold;
+}
+
+div.footer-text a.footer.contact-link {
+    grid-column: 1/2;
+}
+
+div.footer-icons {
+    grid-column: 2/3;
+    max-width: 210;
+}
+
+div.footer-ead-icon {
+    grid-column: 3/4;
+}
+
+a.footer-contact-link {
+    color: #000000;
+    text-decoration: none;
+}
+
+a.footer-contact-link:visited {
+    color: #000000;
+}
+
+a.footer-contact-link:hover {
+    color: #43736E;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
