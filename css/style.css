@@ -1,3 +1,9 @@
+* {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color:#000000;
     --primary-font: 'Sora', sans-serif; 
@@ -5,12 +11,6 @@
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-family: 'Sora', sans-serif;
-}
-
-* {
-    padding: 0px;
-    margin: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -52,7 +52,7 @@ a.nav-link:hover{
 img.image-inicio {
     width: 200px;
     border-radius: 50%;
-    background-image: none;
+    background-image: url("../../media/examples/lizard.png");
 }
 
 .container-fluid {
@@ -90,10 +90,11 @@ div.container-fluid-registro-clases {
 }
 
 div.main-content-items{
-    background-color: #DCF2BB;
+    /*background-color: #DCF2BB;*/
     max-width: 100%;
     padding: 50px;
     align-items: center;
+    background: linear-gradient(to bottom, #DCF2BB, white);
 }
 
 h1 {
