@@ -275,6 +275,10 @@ li {
     font-size: 0.8rem;
 }
 
+img.images-clases {
+    padding: 20px;
+}
+
 a.lectures {
     color: #000000;
 }

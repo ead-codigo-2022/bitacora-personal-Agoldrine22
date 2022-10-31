@@ -14,52 +14,81 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&family=Roboto:wght@300;400&family=Sora&display=swap" rel="stylesheet">
 </head> 
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="images/logo.jpg" alt="Logo" width="50" height="50" class="d-inline-block align-text-center" width="40px">
-                Bitácora de Alondra Z. Goldrine
-                </a>  
-                <ul class="nav justify-content-end">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="https://ead-codigo-2022.github.io/bitacora-personal-Agoldrine22/inicio.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Registro Clases</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://ead-codigo-2022.github.io/proyecto-grupal-gabi-fran-y-alo/inicio.html">Proyecto Grupal</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://wiki.ead.pucv.cl/Alondra_Zamorano">wiki e[ad]</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Sobre mí</a>
-                </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+  <header>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.jpg" alt="Logo" width="50" height="50" class="d-inline-block align-text-center" width="40px">Bitácora de Alondra Z. Goldrine
+        </a>  
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="https://ead-codigo-2022.github.io/bitacora-personal-Agoldrine22/inicio.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://ead-codigo-2022.github.io/bitacora-personal-Agoldrine22/registro-clases.html">Registro Clases</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://ead-codigo-2022.github.io/proyecto-grupal-gabi-fran-y-alo/inicio.html">Proyecto Grupal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://wiki.ead.pucv.cl/Alondra_Zamorano">wiki e[ad]</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre mí</a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
     <div class="main-content">
-        <div class="main-content-items">
-          <div class="images">
-            <a href="https://wiki.ead.pucv.cl/Alondra_Zamorano">
-              <img class="back" src="images/Alo_en_Atenas_22.jpg" alt="">
-              <img class="top" src="images/me.jpg" alt="Memoji-Alondra">
-            </a>
-          </div>
-          <h1>¡BIENVENID@!</h1> <br>
-          <p> Mi nombre es Alondra Zamorano Goldrine, tengo 22 años y soy estudiante de Diseño de la PUCV.
-                Esta es mi primera vez programando y esta es mi bitacora del curso Diseño desde el Código.
-                Aquí podrán encontrar los experimentos y ejercicio que vamos haciendo clase a clase, así
-                como apuntes varios entre otras cosas de mi interés personal. 
-                <br><br>
-                ¡Veremos que sale de este experimento!
-          </p>
+      <div class="main-content-items">
+        <div class="main-content-clases">
+          <h2 class="title-clases">Clase 3: CSS</h2><br>
+          <h3>Consideraciones</h3>
+          <p class="text-clases">
+            Crear un archivo .gitignore para que no se versionen los index. GitHub sólo reconoce los archivos jpeg., jpg., png., pero no archivos ilustrator o comprimidos.<br>
+            La sección body del código HTML es lo que se en la pantalla. Mientras que head corresponde a los metadatos.
+          </p><br>
+          <h3>Sobre CSS</h3>
+          <p class="text-clases">Es el medio por el cual le damos estilo a lo que vamos construyendo y escribiendo en HTML. Por ejemplo, seleccionas el elemento -body- y a eso le das estilo.<br>
+          En la cascada de estilos, se escribe el selector o contenedor más { y se le comienza a dar propiedades como: </p>
+            <ul>
+              <li>font-family</li>
+              <li>font-size</li>
+              <li>width</li>
+              <li>etc.</li>
+            </ul>
+          <p class="text-clases-notas">*El navegador toma la tipografía predeterminada que tenga el nombre definido en el CSS.</p><br>
+          <h3 class="title-clases">Recomendaciones de Escritura:</h3>
+            <ul>
+              <li>Sólo un selector y declaración por línea</li>
+              <li>Dejar un espacio entre el último selector y la llave de inicio</li>
+              <li>Dejar un espacio entre los dos puntos y el valor</li>
+            </ul>
+            <h3>¿Cómo insertar una cascada de estilos al documento HTML?</h3>
+            <ul>
+              <li>Se puede insertar tanto en la sección -head- como en -body-. Lo recomendado es hacerlo en -head-.</li>
+              <li>Se puede enlazar a múltiples hojas de estilo.</li>
+            </ul>
+          <h3>Selectores CSS</h3>
+          <p class="text-clases">Definen sobre qué elementos se aplicará el conjunto de reglas CSS.<br>Tomo un elemento de HTML y le doy estilo en CSS.<br>Se pueden llamar etiquetas, atributos con "#" y clases. Para llamar a las clases, se coloca un punto antes del nombre.</p>
+          <br>
+          <h3>Especificidad</h3>
+          <p class="text-clases">Jerarquía de aplicación de estilos sobre un elemento. ¿Cómo se calcula?</p>
+          <ul>
+            <li>Elementos, pseudo elementos valen 1</li>
+            <li>Clases, pseudo clases y atributos valen 10</li>
+            <li>Ids valen 100</li>
+            <li>Estilos en línea valen 1000</li>
+          </ul>      
+          <p class="text-clases">El número más alto es el que va a prevalecer en la aplicación de estilos.</p>
+          <br>
+          <h3>Herencia</h3>
+          <p class="text-clases">Indica si el valor de una propiedad es "heredado" de sus elementos superiores.</p>
         </div>
+      </div>
     </div>
-    <div class="footer-container">
+  <div class="footer-container">
       <div class="footer-text">CONTACTO<br>
         <a class="footer-contact-link" href="mailto:alondra.zamorano.g@mail.pucv.cl">alondra.zamorano.g@mail.pucv.cl</a>
       </div>
@@ -71,7 +100,7 @@
           <img src="images/Ead_Logo_2019_color.png" alt="Logo e[ad]" width="180" height="auto">
         </a>
      </div>
-    </div>
+  </div>
 
     <!--<h2>Clase 1</h2>
     <p>*HTTP: Protocolo de transferencia de hipertexto<br>

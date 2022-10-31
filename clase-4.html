@@ -14,64 +14,101 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&family=Roboto:wght@300;400&family=Sora&display=swap" rel="stylesheet">
 </head> 
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="images/logo.jpg" alt="Logo" width="50" height="50" class="d-inline-block align-text-center" width="40px">
-                Bitácora de Alondra Z. Goldrine
-                </a>  
-                <ul class="nav justify-content-end">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="https://ead-codigo-2022.github.io/bitacora-personal-Agoldrine22/inicio.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Registro Clases</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://ead-codigo-2022.github.io/proyecto-grupal-gabi-fran-y-alo/inicio.html">Proyecto Grupal</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://wiki.ead.pucv.cl/Alondra_Zamorano">wiki e[ad]</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Sobre mí</a>
-                </li>
-                </ul>
-            </div>
-        </nav>
+  <header>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.jpg" alt="Logo" width="50" height="50" class="d-inline-block align-text-center" width="40px">Bitácora de Alondra Z. Goldrine
+        </a>  
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="https://ead-codigo-2022.github.io/bitacora-personal-Agoldrine22/inicio.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://ead-codigo-2022.github.io/bitacora-personal-Agoldrine22/registro-clases.html">Registro Clases</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://ead-codigo-2022.github.io/proyecto-grupal-gabi-fran-y-alo/inicio.html">Proyecto Grupal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://wiki.ead.pucv.cl/Alondra_Zamorano">wiki e[ad]</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre mí</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     </header>
     <div class="main-content">
         <div class="main-content-items">
-          <div class="images">
-            <a href="https://wiki.ead.pucv.cl/Alondra_Zamorano">
-              <img class="back" src="images/Alo_en_Atenas_22.jpg" alt="">
-              <img class="top" src="images/me.jpg" alt="Memoji-Alondra">
-            </a>
+          <div class="main-content-clases">
+            <h2 class="title-clases">Clase 4: +CSS</h2><br>
+            <h3>-Tipografías-</h3>
+            <p class="text-clases">font-family: "Open-Sans", "Helvetica",...</p><br>
+            <p class="text-clases-notas">*Los nombres de las tipografías entre comillas cuando hay espacios.<br>*Las tipografías después de la primera, son en caso de error.<br></p>
+            <br>
+            <p class="text-clases">Para cargar nuevas tipografías existen diferentes fuentes:</p>
+              <ul>
+                <li>Google Fonts: Se descargan sólo las que se utilizarán en la cascada de estilos.</li>
+                <li>Fontshare: También se descargan. Permite definir el peso de la tipografía al ser variable.</li>
+              </ul>
+            <p class="text-clases-notas">*Cuidado con las licencias de las tipografías.</p><br>
+            <h3>Tamaño y Espacio del Texto</h3>
+            <ul>
+              <li>font-size: px (pixeles: tamaño absoluto que no varía), rem (relativo a la tipografía: tamaño de la m)</li>
+              <li>line-height: depende del tamaño de la tipografía. Se trabaja en fracciones.</li>
+              <li>letter-spacing: interletrado. En rem preferentemente.</li>
+              <li>word-spacing: espacio entre palabras.</li>
+            </ul>
+            <h3>Mayúsculas y Minísculas</h3>
+              <ul>
+                <li>text-transform: uppercase, lowercase, capitalize,...</li>
+              </ul>
+            <p class="text-clases-notas">*En el documento HTML: sólo escribir abreviaciones en mayúscula.</p><br>
+            <h3>Alineación</h3>
+              <ul>
+                <li>text-align: left, center, right, justify, start, end</li>
+              </ul>
+            <p class="text-clases-notas">*Start y end en relación a la dirección de lectura del idioma.</p><br>
+            <h3>Color</h3>
+            <ul>
+              <li>red: 110 nombres de colores soportados</li>
+              <li>Hexadecimal</li>
+              <li>RGB</li>
+              <li>HSL</li>
+            </ul>
+            <h3>Variable CSS</h3>
+            <p class="text-clases">Entidad que guarda un valor para ser reutilizado.</p>
+            <ul>
+              <li>:root { <br>
+                --primary-color; (se recomienda declararlo en la raíz del documento HTML)</li>
+              <li>:entry-title { <br>
+                font-size: 2rem; color: var (--primary-color); (se utiliza a través de la función "var")</li>
+            </ul>
+            <h3>Box Model</h3>
+            <p class="text-clases">Contiene todo lo que se ve en la página</p>
+            <img class="images-clases" src="images/Clase 4_ box-model.jpg" alt="Módelo de Caja" width="400"></img>
+            <br>
+            <h3>Propiedad box-sizing</h3>
+            <p class="text-clases">Predeterminadamente el borde no es parte del tamaño, se define separadamente. Por esos se utiliza esta propiedad.</p>
+            <img class="images-clases" src="images/Clase 4_ box-sizing.jpg" alt="Propiedad box-sizing" width="300"></img>
           </div>
-          <h1>¡BIENVENID@!</h1> <br>
-          <p> Mi nombre es Alondra Zamorano Goldrine, tengo 22 años y soy estudiante de Diseño de la PUCV.
-                Esta es mi primera vez programando y esta es mi bitacora del curso Diseño desde el Código.
-                Aquí podrán encontrar los experimentos y ejercicio que vamos haciendo clase a clase, así
-                como apuntes varios entre otras cosas de mi interés personal. 
-                <br><br>
-                ¡Veremos que sale de este experimento!
-          </p>
         </div>
     </div>
-    <div class="footer-container">
-      <div class="footer-text">CONTACTO<br>
-        <a class="footer-contact-link" href="mailto:alondra.zamorano.g@mail.pucv.cl">alondra.zamorano.g@mail.pucv.cl</a>
-      </div>
-      <div class="footer-icons">
-        <img src="images/social media icons.png" alt="Social Media Icons" width="150" height="auto" height="48">
-      </div>
-      <div class="footer-ead-icon">
-        <a href="https://www.ead.pucv.cl">
-          <img src="images/Ead_Logo_2019_color.png" alt="Logo e[ad]" width="180" height="auto">
-        </a>
-     </div>
+  <div class="footer-container">
+    <div class="footer-text">CONTACTO<br>
+      <a class="footer-contact-link" href="mailto:alondra.zamorano.g@mail.pucv.cl">alondra.zamorano.g@mail.pucv.cl</a>
     </div>
+    <div class="footer-icons">
+      <img src="images/social media icons.png" alt="Social Media Icons" width="150" height="auto" height="48">
+    </div>
+    <div class="footer-ead-icon">
+      <a href="https://www.ead.pucv.cl">
+        <img src="images/Ead_Logo_2019_color.png" alt="Logo e[ad]" width="180" height="auto">
+      </a>
+    </div>
+  </div>
 
     <!--<h2>Clase 1</h2>
     <p>*HTTP: Protocolo de transferencia de hipertexto<br>
