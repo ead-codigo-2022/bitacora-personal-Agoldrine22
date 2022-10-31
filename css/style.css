@@ -41,17 +41,13 @@ nav {
     margin-left: 0;
     margin-right: 0;
     padding-right: 0;
+    font-weight: 400;
 }
 
-.nav-link.active {
+a.nav-link.active {
     color: #43736E;
     background: none;
     font-weight: bold;
-}
-
-
-a.nav-link:visited {
-    color: #000000;
 }
 
 a.nav-link:hover {
@@ -304,6 +300,7 @@ h3.team-title {
     font-size: 1.2rem;
     text-align: start;
 }
+
 .feature-icon.d-inline-flex {
     padding-bottom: 20px;
 }
