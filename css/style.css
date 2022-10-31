@@ -30,6 +30,10 @@ nav {
     height: 80px;
 }
 
+.nav-bar {
+    height: 80px;
+}
+
 .nav-link {
     text-transform: uppercase;
     text-decoration: none;
@@ -126,6 +130,7 @@ div.footer-container {
 
 div.footer-text {
     font-weight: bold;
+    text-align: start;
 }
 
 div.footer-text a.footer.contact-link {
@@ -186,11 +191,16 @@ div.col-lg-6.col-md-8 {
     padding-bottom: 1rem;
 }
 
-div.row.row-cols-1.row-cols-sm-2.row-cols-md-3.g-3 {
+div.row.row-cols-1.row-cols-sm-2.row-cols-md-3.h-300 {
+    margin-top: 0;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 3rem;
-    padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.g-3 {
+    --bs-gutter-y: 1rem;
 }
 
 div.col p.card-body-reference {
