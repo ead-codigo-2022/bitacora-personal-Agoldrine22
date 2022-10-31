@@ -42,7 +42,8 @@ nav {
     margin-right: 0;
     padding-right: 0;
 }
-.nav-link {
+
+.nav-link.active {
     color: #43736E;
     background: none;
     font-weight: bold;
