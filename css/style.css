@@ -239,3 +239,47 @@ button.btn-ver-más:hover {
     border: none;
 }
 
+/*Clases*/
+
+.main-content-clases {
+    text-align: start;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+strong {
+    font-size: 1rem;
+}
+
+.main-content-clases p.text-clases {
+    margin: 0;
+    max-width: 700px;
+    text-align: start;
+    font-size: 1rem;
+}
+
+.main-content-clases p.text-clases-notas {
+    margin: 0;
+    font-size: 0.8rem;
+    text-align: start;
+    color: #43736E;
+}
+
+li {
+    font-size: 0.8rem;
+}
+
+a.lectures {
+    color: #000000;
+}
+
+a.lectures:hover {
+    color: #43736E;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
