@@ -44,14 +44,12 @@ nav {
     font-weight: 400;
 }
 
-a.nav-link.active {
-    color: #43736E;
-    background: none;
-    font-weight: bold;
-}
+/*When setting the style for several link states, there are some order rules:
+a:hover MUST come after a:link and a:visited
+a:active MUST come after a:hover*/
 
 a.nav-link:visited {
-    color: none;
+    color: #000000;
 }
 
 a.nav-link:hover {
@@ -59,8 +57,10 @@ a.nav-link:hover {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-a.nav-link:visited {
-    color: black;
+a.nav-link.active {
+    color: #43736E;
+    background: none;
+    font-weight: bold;
 }
 
 .container-fluid {
@@ -293,17 +293,9 @@ img.images-clases {
     padding: 20px;
 }
 
-a {
-    color: #000000;
-}
-
 a.link-clases:hover {
     color: #43736E;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-a:visited {
-    color: #000000;
 }
 
 /*Sobre mí*/
