@@ -14,82 +14,137 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&family=Roboto:wght@300;400&family=Sora&display=swap" rel="stylesheet">
 </head> 
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="images/logo.jpg" alt="Logo" width="50" height="50" class="d-inline-block align-text-center" width="40px">
-                Bitácora de Alondra Z. Goldrine
-                </a>  
-                <ul class="nav justify-content-end">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="https://ead-codigo-2022.github.io/bitacora-personal-Agoldrine22/inicio.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Registro Clases</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://ead-codigo-2022.github.io/proyecto-grupal-gabi-fran-y-alo/inicio.html">Proyecto Grupal</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://wiki.ead.pucv.cl/Alondra_Zamorano">wiki e[ad]</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Sobre mí</a>
-                </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <div class="main-content">
-        <div class="main-content-items">
-          <div class="images">
-            <a href="https://wiki.ead.pucv.cl/Alondra_Zamorano">
-              <img class="back" src="images/Alo_en_Atenas_22.jpg" alt="">
-              <img class="top" src="images/me.jpg" alt="Memoji-Alondra">
-            </a>
-          </div>
-          <h1>¡BIENVENID@!</h1> <br>
-          <p> Mi nombre es Alondra Zamorano Goldrine, tengo 22 años y soy estudiante de Diseño de la PUCV.
-                Esta es mi primera vez programando y esta es mi bitacora del curso Diseño desde el Código.
-                Aquí podrán encontrar los experimentos y ejercicio que vamos haciendo clase a clase, así
-                como apuntes varios entre otras cosas de mi interés personal. 
-                <br><br>
-                ¡Veremos que sale de este experimento!
-          </p>
-        </div>
-    </div>
-    <div class="footer-container">
-      <div class="footer-text">CONTACTO<br>
-        <a class="footer-contact-link" href="mailto:alondra.zamorano.g@mail.pucv.cl">alondra.zamorano.g@mail.pucv.cl</a>
+  <header>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.jpg" alt="Logo" width="50" height="50" class="d-inline-block align-text-center" width="40px">Bitácora de Alondra Z. Goldrine
+        </a>  
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="https://ead-codigo-2022.github.io/bitacora-personal-Agoldrine22/inicio.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Registro Clases</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://ead-codigo-2022.github.io/proyecto-grupal-gabi-fran-y-alo/inicio.html">Proyecto Grupal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://wiki.ead.pucv.cl/Alondra_Zamorano">wiki e[ad]</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre mí</a>
+          </li>
+          </ul>
       </div>
-      <div class="footer-icons">
-        <img src="images/social media icons.png" alt="Social Media Icons" width="150" height="auto" height="48">
+    </nav>
+  </header>
+  <div class="main-content">
+    <div class="main-content-items">
+      <div class="main-content-clases">
+        <h2 class="title-clases">Clase 8: Imágenes + Acessibilidad / SEO</h2><br>
+        <h3>Uso de Imágenes</h3>
+        <p class="text-clases">Formatos comunes para web:</p>
+        <ul>
+          <li>jpg.= Imagen de trama. Sistema de compresión ideal.</li>
+          <li>png.= Pesa más pues tiene un sistema distinto de compresión. Es ideal para logos.</li> 
+          <li>gif.= Baja resolución porque sólo acepta 256 colores. Se recomienda más usar vídeos que gifs.</li>
+          <li>svg.= Código xml. Se puede moficiar con CSS. Es bueno para icónos.magen de trama. Sistema de compresión ideal.</li>
+          <li>webp.= Novedoso. Viene a remplazar a jpg con imágenes más livianas por su mejor compresión.</li>
+        </ul>
+        <h3>Rasgos importantes en imágenes</h3>
+          <li>Optimización= Comprimir para alivianar la imagenes y que se descargue rapidamente y bien.</li>
+          <li>Escoger bien el formato de la imagen según el tipo y uso.</li>
+          <li>Que la imagen esté siempre el máximo tamaño que queramos utilizar.</li>
+        </ul>
+        <br>
+        <h3>Imágenes adaptables</h3>
+        <p class="text-clases">Para ayudar a la responsividad del sitio y que la imagen se descargue en su tamaño apropiado, una buena opción es embeber diferentes tamaños de imagenes.</p>
+        <ul>
+          <li>PPI - PPP= Pixeles por pulgada --} Densidad de pixeles de una imagen. No es un dato de la imagen, si no que se relaciona con el número total de pixeles en la pantalla.</li>
+          <li>SVG= Graphic Vector Scalable --} Formato vectoral. Al ser escalable permite responisividad pues "nunca se va a pixelear". Es código, por lo que puede ser intervenido.</li>
+        </ul>
+        <p class="text-clases">Para el uso de íconos, estos se escriben en el HTML y se editan en el CSS.</p>
+        <p class="text-clases-notas">*La carpeta de icons debe estar separada de la de imágenes.</p><br>
+        <h3>Accesibilidad</h3>
+        <p class="text-clases">Busca comprender las discapacidades así como situaciones que nos afectan a todos.<i> ¿Cómo puedo navegar un sitio si no tengo teclado?</i></p>
+        <br>
+        <p class="text-clases">Hay 4 principios de Accesibilidad:</p>
+        <ul>
+          <li>Perceptible= Fácil de entender lo que se ve y lo que es.</li>
+          <li>Operable= Debe por der utilizarse.</li>
+          <li>Comprensible= Que se entienda lo que la interfaz muestra.</li>
+          <li>Robusto= El código está bien construido. Para ello se puede validar con W3C u otros validadores de HTML y CSS.</li>
+        </ul>
+        Además, hay 3 niveles de Conformidad:
+        <ul>
+          <li>A= Uso de color y control de audio.</li>
+          <li>AA= Constraste 4:5:1. Cambio de tamaño del texto y texto en lugar de imágenes de texto.</li>
+          <li>AAA= Constraste 7:1. Sonido de fondo bajo o ausente. Presentación visual y texto en lugar de imágenes.</li>
+        </ul>
+        <h3>Técnicas básicas para la Accesibilidad</h3>
+        <ul>
+          <li>En el Código: 
+            <ol>
+              <li>Utilización del atributo -alt- en imágenes.</li>
+              <li>Utilizar marcado estándar y válido.</li>
+              <li>Validar datos de formulario e indicar forma de solucionar problemas.</li>
+            </ol>
+          </li>
+          <li>En el Diseño:
+            <ol>
+              <li>Utilización colores con un constraste suficiente.</li>
+              <li>Permitir que los usuarios controlen el tamaño de los textos sin desarmar la estructura de la página.</li>
+            </ol>
+          </li>
+          <li>En el Contenido:
+            <ol>
+              <li>No mostrar información relevante unicamente a través de imágenes o videos.</li>
+              <li>Utilizar lenguaje adecuado al público objetivo del sitio.</li>
+              <li>Añadir subtítulos y transcripciones paraa vídeos y audio.</li>
+            </ol>
+          </li>
+          <li>En la Interactividad:
+            <ol>
+              <li>Verificar que cada página del sitio es navegable con el teclado.</li>
+              <li>Siempre añadir controles para contenidos interactivos, animaciones, etc.</li>
+            </ol>
+          </li>
+        </ul>
+        <h3>SEO Search Engine Optimization <br><i>Optimización para motores de búsqueda</i></h3>
+        <p class="text-clases">¿Cómo funciona?<br>
+        1.-rastreo ----> 2.-indexación ----> 3.-ranking<br>
+        En este proceso se recorren todos los enlaces.
+        </p>
+        <br>
+        <h3>Técnicas básicas para la Optimización</h3>
+        <ul>
+          <li>robots.txt= Permite definir cuanto de un sitio no es indexable.</li>
+          <li>Metadatos= Permite al buscador tener una perspectiva general del contenido de la pagina y al autor, una perpectiva general del contenido a posiciones sus palabras claves.<br>Etiqueta -title- (máx. 70-75 caracteres).<br>Meta descripción con la etiqueta -meta- (máx. 160 caracteres).</li>
+          <li>Atributo -alt- en imágenes= Especifica el texto alternativo de la imagen.</li>
+          <li>Estructura y utilización correcta de títulos (h1-h6).</li>
+          <li>sitemaps.xml= Archivos que proporcionan toda la información sobre las rutas del sitio (páginas, vídeos, etc.)</li>
+          <li>URL Canónica= Es necesario en Google para indexar, pues es la versión "oficial". No se precede necesariamente con "www" pero es lo recomendable.</li>
+          <li>Definir el idioma del documento --}-html lang="es-CL"-</li>
+          <li>URLS Amigables= Uso de minúsculas, 0-9, guión como medio separador de palabras.</li>
+        </ul>
       </div>
-      <div class="footer-ead-icon">
-        <a href="https://www.ead.pucv.cl">
-          <img src="images/Ead_Logo_2019_color.png" alt="Logo e[ad]" width="180" height="auto">
-        </a>
-     </div>
+    </div>  
+  </div>
+  <div class="footer-container">
+    <div class="footer-text">CONTACTO<br>
+      <a class="footer-contact-link" href="mailto:alondra.zamorano.g@mail.pucv.cl">alondra.zamorano.g@mail.pucv.cl</a>
     </div>
-
-    <!--<h2>Clase 1</h2>
-    <p>*HTTP: Protocolo de transferencia de hipertexto<br>
-        *HTML: Lenguaje de marcado de hipertexto<br>
-        *URL: Localizador de recursos uniforme<br>
-        *WWW: World Wide Web - Red informática mundial<br>
-        *W3C: Consorcio WWW<br>
-        ¿Cómo funciona un sitio web?<br>
-        1. Navegador Web 
-        <img src="images/navegadores-web-mas-usados.jpg" alt="Navegadores Web" class=".img"/>
-        2. URL
-        <img src="images/post_url_940x606.png" alt="Weimar Markplatz" class=".img"/>
-        Front-end HTML, CSS, JS
-        Back-end</p>   
-    <h1>Clase 2</h1>
-    <h1>Clase 3</h1>
-    <img src="images/Weimar-alemania-1024x640.jpg" alt="Weimar Markplatz" class="basic-image"/>
-    <h1>Contacto: alondra.zamorano.g@gmail.com</h1>-->
+    <div class="footer-icons">
+      <img src="images/social media icons.png" alt="Social Media Icons" width="150" height="auto" height="48">
+    </div>
+    <div class="footer-ead-icon">
+      <a href="https://www.ead.pucv.cl">
+        <img src="images/Ead_Logo_2019_color.png" alt="Logo e[ad]" width="180" height="auto">
+      </a>
+    </div>
+  </div>
 </body>
 </html>
 </HTml:5>

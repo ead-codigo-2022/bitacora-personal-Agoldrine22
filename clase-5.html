@@ -14,82 +14,105 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&family=Roboto:wght@300;400&family=Sora&display=swap" rel="stylesheet">
 </head> 
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="images/logo.jpg" alt="Logo" width="50" height="50" class="d-inline-block align-text-center" width="40px">
-                Bitácora de Alondra Z. Goldrine
-                </a>  
-                <ul class="nav justify-content-end">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="https://ead-codigo-2022.github.io/bitacora-personal-Agoldrine22/inicio.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Registro Clases</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://ead-codigo-2022.github.io/proyecto-grupal-gabi-fran-y-alo/inicio.html">Proyecto Grupal</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://wiki.ead.pucv.cl/Alondra_Zamorano">wiki e[ad]</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Sobre mí</a>
-                </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <div class="main-content">
-        <div class="main-content-items">
-          <div class="images">
-            <a href="https://wiki.ead.pucv.cl/Alondra_Zamorano">
-              <img class="back" src="images/Alo_en_Atenas_22.jpg" alt="">
-              <img class="top" src="images/me.jpg" alt="Memoji-Alondra">
-            </a>
-          </div>
-          <h1>¡BIENVENID@!</h1> <br>
-          <p> Mi nombre es Alondra Zamorano Goldrine, tengo 22 años y soy estudiante de Diseño de la PUCV.
-                Esta es mi primera vez programando y esta es mi bitacora del curso Diseño desde el Código.
-                Aquí podrán encontrar los experimentos y ejercicio que vamos haciendo clase a clase, así
-                como apuntes varios entre otras cosas de mi interés personal. 
-                <br><br>
-                ¡Veremos que sale de este experimento!
-          </p>
-        </div>
-    </div>
-    <div class="footer-container">
-      <div class="footer-text">CONTACTO<br>
-        <a class="footer-contact-link" href="mailto:alondra.zamorano.g@mail.pucv.cl">alondra.zamorano.g@mail.pucv.cl</a>
+  <header>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.jpg" alt="Logo" width="50" height="50" class="d-inline-block align-text-center" width="40px">Bitácora de Alondra Z. Goldrine
+        </a>  
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="https://ead-codigo-2022.github.io/bitacora-personal-Agoldrine22/inicio.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Registro Clases</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://ead-codigo-2022.github.io/proyecto-grupal-gabi-fran-y-alo/inicio.html">Proyecto Grupal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://wiki.ead.pucv.cl/Alondra_Zamorano">wiki e[ad]</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre mí</a>
+          </li>
+        </ul>
       </div>
-      <div class="footer-icons">
-        <img src="images/social media icons.png" alt="Social Media Icons" width="150" height="auto" height="48">
+    </nav>
+  </header>
+  <div class="main-content">
+    <div class="main-content-items">
+      <div class="main-content-clases">
+        <h2 class="title-clases">Clase 5: Diagramación</h2><br>
+        <h3>Grilla CSS</h3>
+        <p class="text-clases">
+          Permite diagramar en dos dimensiones, independiente del orden en que se encuentra el contenido.<br>
+          En la cascada de estilos, al contenedor se le da la propiedad de <strong>display: grid.</strong></p>
+        <br>
+        <p class="text-clases">Algunas características:</p>
+          <ul>
+            <li>(colum/row)-gap= distancia de los elementos dentro de la grilla. Modifica el margen.</li>
+            <li>Se puede definir una grilla identificando líneas</li> 
+            <img class="images-clases" src="images/Clase 5_ Estructura y diagramación_grid.jpg" alt="Propiedad grid" width="400"></img>
+            <li>Unidad fr= representa una fracción del espacio restante en el contedor de grilla.</li>
+            <li>Se pueden definir las posiciones de cada elementos dentro de la grilla.</li>
+          </ul>
+        <p class="text-clases-notas">*1rem= 16px</p>
+        <br>
+        <h3>Posiciones</h3>
+        <p class="text-clases">Se puede determinar la posición de un objeto. Predeterminadamente, todos los elementos tienen la misma posición.</p>
+        <ul>
+          <li>position: static; --} Se mantiene en su posición original del flujo normal del documento.</li>
+          <li>position: relative; --} El elemento es posicionado de acuerdo al flujo normal del documento, y luego es desplazado con relación a sí mismo. Es decir, muevo el elemento pero su "espacio" original se mantiene. Es util para alinear elementos como logos 
+            o títulos, pues a veces la propiedad margin-top mueve todos los elementos. Con posición relativa sólo se movera el elemento seleccionado.
+          </li>
+          <li>position: absolute; --} El elemento es removido del flujo normal del documento, sin crearse espacio alguno para el elemento en el esquema de la página. Es decir, el elemento sale de su posición natural del flujo y pasa a una capa superior.</li>
+          <li>position: sticky; --} El elemento es posicionado de acuerdo al flujo normal del documento, y luego es desplazado con relación a su ancestro que se desplace más cercano. El elemento obedece al scroll.</li>
+          <li>position: fixed; --} El elemento es removido del flujo normal del documento, sin crearse espacio alguno para el elemento en el esquema de la página. Es similiar a sticky pero no tiene una posición en el flujo.</li>
+        </ul>
+        <p class="text-clases-notas">*Las coordenadas dadas (top, left, right, bottom), van a ser tomadas desde el elemento padre, por lo tanto, si su contenedor tiene declarada una posición, está será aplicada en los elementos hijos a menos que se especifique una posición particular a estos.<br>
+          *Al ser contenedores div, cada caja sigue el flujo en su orden natural.</p>
+        <br>
+        <h3>Flexbox</h3>
+        <p class="text-clases">Entrega al contenedor la habilidad para alterar el ancho o alto, y los espaciados de sus elementos, para así ajustarse de la mejor manera al espacio disponible. Funcionan en un eje, ya sea horizontal o vertical.<br>
+          display: flex; --} Los contenedores se ubican en la misma línea. Se suele ocupar en los menús de navegación.
+        </p>
+        <ul>
+            <li>Ya sea horizontal o vertical, en ambos ejes, los tamaños se ajustan al tamaño total del body, no al de la pantalla.</li>
+            <li>Predeterminadamente, se distribuyen en el eje horizontal pero se puede cambiar al eje vertical.</li>
+            <li>flex-direction: row, column, row-reverse, column-reverse</li>
+        </ul>
+        <h3>Distribución</h3>
+        <p class="text-clases">Propiedades:</p>
+          <ul>
+            <li>justify-content= Alineación de elementos en el eje principal. (flex-start, flex-end, center, space between, space around, space-evenly)</li>
+            <li>align-content= Distribución de espacios restantes en el eje secundario. (flex-start, flex-end, center, stretch, baseline)</li>
+            <li>align-items= Alineación de elementos en el eje secundario. (flex-start, flex-end, center, stretch, baseline)</li>
+            <li>align-self= Alineación del propio elemento en el eje secundario. Se aplica a un elemento flexible, no a un contenedor. (flex-start, flex-end, center, stretch, baseline) </li>
+          </ul>
+        <h3>Dimensiones</h3>
+        <p class="text-clases">Flexbox permite definir reglas de dimensiones para los elementos, orientadas a adaptar los tamaños para distintas resoluciones.</p>
+        <ul>
+          <li>flex-basis: 25%; --} Cada row ocupara en 25% del espacio total.</li>
+          <li>flex-grow: 1; --} Cada uno ocupara el mismo valor de espacio dentro del total. Si uno de los elementos, tuviera flex-grow: 2, ocuparía el doble de espacio.</li>
+          <li>flex-shrink: 2;--} El elemento ocupará la mitad del espacio. Es decir 1:2.</li>
+        </ul>
       </div>
-      <div class="footer-ead-icon">
-        <a href="https://www.ead.pucv.cl">
-          <img src="images/Ead_Logo_2019_color.png" alt="Logo e[ad]" width="180" height="auto">
-        </a>
-     </div>
     </div>
-
-    <!--<h2>Clase 1</h2>
-    <p>*HTTP: Protocolo de transferencia de hipertexto<br>
-        *HTML: Lenguaje de marcado de hipertexto<br>
-        *URL: Localizador de recursos uniforme<br>
-        *WWW: World Wide Web - Red informática mundial<br>
-        *W3C: Consorcio WWW<br>
-        ¿Cómo funciona un sitio web?<br>
-        1. Navegador Web 
-        <img src="images/navegadores-web-mas-usados.jpg" alt="Navegadores Web" class=".img"/>
-        2. URL
-        <img src="images/post_url_940x606.png" alt="Weimar Markplatz" class=".img"/>
-        Front-end HTML, CSS, JS
-        Back-end</p>   
-    <h1>Clase 2</h1>
-    <h1>Clase 3</h1>
-    <img src="images/Weimar-alemania-1024x640.jpg" alt="Weimar Markplatz" class="basic-image"/>
-    <h1>Contacto: alondra.zamorano.g@gmail.com</h1>-->
+  </div>
+  <div class="footer-container">
+    <div class="footer-text">CONTACTO<br>
+      <a class="footer-contact-link" href="mailto:alondra.zamorano.g@mail.pucv.cl">alondra.zamorano.g@mail.pucv.cl</a>
+    </div>
+    <div class="footer-icons">
+      <img src="images/social media icons.png" alt="Social Media Icons" width="150" height="auto" height="48">
+    </div>
+    <div class="footer-ead-icon">
+      <a href="https://www.ead.pucv.cl">
+        <img src="images/Ead_Logo_2019_color.png" alt="Logo e[ad]" width="180" height="auto">
+      </a>
+    </div>
+  </div>
 </body>
 </html>
 </HTml:5>

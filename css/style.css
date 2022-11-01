@@ -281,13 +281,19 @@ strong {
 
 li {
     font-size: 0.8rem;
-}
-
-a.lectures {
+    max-width: 700px;
     color: #000000;
 }
 
-a.lectures:hover {
+img.images-clases {
+    padding: 20px;
+}
+
+a {
+    color: #000000;
+}
+
+a.link-clases:hover {
     color: #43736E;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
